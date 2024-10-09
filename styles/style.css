@@ -33,7 +33,7 @@ body{
 
 .header a{
     text-decoration: none;
-    color: #e3b062;
+    color: white;
 }
 
 .agora{
@@ -53,11 +53,10 @@ body{
     color: #32b9cd;
     width: fit-content;   /* manter o tamanho e se adaptar a tela */
     font-weight: 500;
-    font-weight: 800;
 }
 
 .banner{
-    height: var(--tamanho-banner);
+    height: calc(var(--tamanho-banner) - 50vh);
     color: white;
     background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
     background-size: cover;
@@ -66,13 +65,14 @@ body{
 .banner .container{
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100%;
 }
 .banner .container p{
-    width: 50%;
+    width: 60%;
     margin: 0;
     padding: 0;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .banner .container span{
@@ -88,18 +88,27 @@ body{
 
 .social .container .boxes{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    width: 70%;
     padding: 30px 0;
 }
 
 .box{
     display: flex;
-    flex-direction: column;
+    margin: 10px;
     align-items: center;
 }
+
+
 .box img{
     width: 170px;
+}
+
+.box .elements{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 /* FOOTER */
 
@@ -118,6 +127,7 @@ body{
 
 .version{
     font-size: 12px;
+    align-self:flex-start;
 }
 
 /* cadastro */
@@ -160,7 +170,7 @@ body{
 }
 span{
     font-family: "Barlow", sans-serif;
-    color: #D27293;
+    color: #ffffff;
     font-weight: 800;
 }
 
